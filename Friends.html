@@ -1,0 +1,189 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Friends - StudySync</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/chat.css">
+</head>
+
+<body>
+
+<header class="navbar">
+
+    <div class="logo">📚 StudySync</div>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="subjects.html">Subjects</a>
+        <a href="communities.html">Communities</a>
+        <a href="notes.html">Notes</a>
+        <a href="planner.html">Planner</a>
+        <a href="friends.html" class="active">Friends</a>
+    </nav>
+
+    <div class="nav-buttons">
+        <a href="notifications.html">🔔</a>
+        <a href="profile.html">👤</a>
+    </div>
+
+</header>
+
+
+<main class="friends-page">
+
+    <section class="chat-heading">
+        <h1>👥 My Friends</h1>
+        <p>Connect and chat with your StudySync friends.</p>
+    </section>
+
+
+    <div class="friend-search">
+        <input
+            type="text"
+            id="friendSearch"
+            placeholder="🔍 Search friends..."
+            onkeyup="searchFriends()"
+        >
+    </div>
+
+
+    <section class="friends-grid" id="friendsList">
+
+        <div class="friend-card" data-name="Rahul Sharma">
+
+            <div class="friend-avatar">
+                R
+                <span class="online-dot"></span>
+            </div>
+
+            <div class="friend-info">
+                <h3>Rahul Sharma</h3>
+                <p>🟢 Online</p>
+            </div>
+
+            <a href="chat.html?friend=Rahul%20Sharma"
+               class="chat-btn">
+                💬 Chat
+            </a>
+
+        </div>
+
+
+        <div class="friend-card" data-name="Priyanshu Kumar">
+
+            <div class="friend-avatar">
+                P
+                <span class="online-dot"></span>
+            </div>
+
+            <div class="friend-info">
+                <h3>Priyanshu Kumar</h3>
+                <p>🟢 Online</p>
+            </div>
+
+            <a href="chat.html?friend=Priyanshu%20Kumar"
+               class="chat-btn">
+                💬 Chat
+            </a>
+
+        </div>
+
+
+        <div class="friend-card" data-name="Aman Verma">
+
+            <div class="friend-avatar offline">
+                A
+            </div>
+
+            <div class="friend-info">
+                <h3>Aman Verma</h3>
+                <p>⚪ Offline</p>
+            </div>
+
+            <a href="chat.html?friend=Aman%20Verma"
+               class="chat-btn">
+                💬 Chat
+            </a>
+
+        </div>
+
+
+        <div class="friend-card" data-name="Shreya Singh">
+
+            <div class="friend-avatar">
+                S
+                <span class="online-dot"></span>
+            </div>
+
+            <div class="friend-info">
+                <h3>Shreya Singh</h3>
+                <p>🟢 Online</p>
+            </div>
+
+            <a href="chat.html?friend=Shreya%20Singh"
+               class="chat-btn">
+                💬 Chat
+            </a>
+
+        </div>
+
+
+        <div class="friend-card" data-name="Neha Gupta">
+
+            <div class="friend-avatar offline">
+                N
+            </div>
+
+            <div class="friend-info">
+                <h3>Neha Gupta</h3>
+                <p>⚪ Offline</p>
+            </div>
+
+            <a href="chat.html?friend=Neha%20Gupta"
+               class="chat-btn">
+                💬 Chat
+            </a>
+
+        </div>
+
+
+        <div class="friend-card" data-name="Aditya Singh">
+
+            <div class="friend-avatar">
+                A
+                <span class="online-dot"></span>
+            </div>
+
+            <div class="friend-info">
+                <h3>Aditya Singh</h3>
+                <p>🟢 Online</p>
+            </div>
+
+            <a href="chat.html?friend=Aditya%20Singh"
+               class="chat-btn">
+                💬 Chat
+            </a>
+
+        </div>
+
+    </section>
+
+</main>
+
+
+<footer class="footer">
+    <p>© 2026 StudySync. Learn. Connect. Grow.</p>
+</footer>
+
+
+<script src="js/chat.js"></script>
+
+</body>
+</html>
+

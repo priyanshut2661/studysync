@@ -1,0 +1,151 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discussions - StudySync</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+
+<body>
+
+<header class="navbar">
+    <div class="logo">📚 StudySync</div>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="subjects.html">Subjects</a>
+        <a href="communities.html">Communities</a>
+        <a href="notes.html">Notes</a>
+        <a href="planner.html">Planner</a>
+    </nav>
+
+    <div class="nav-buttons">
+        <a href="login.html" class="btn-outline">Login</a>
+        <a href="signup.html" class="btn">Sign Up</a>
+    </div>
+</header>
+
+
+<main class="discussions-page">
+
+    <section class="page-heading">
+        <h1>💬 Discussions</h1>
+        <p>Ask questions, share ideas and learn together.</p>
+    </section>
+
+
+    <div class="discussion-layout">
+
+        <section class="discussion-main">
+
+            <div class="discussion-topbar">
+                <h2>Recent Discussions</h2>
+                <button class="btn" onclick="loginMessage()">+ New Discussion</button>
+            </div>
+
+
+            <div class="discussion-card">
+                <div class="discussion-user">
+                    <div class="avatar">P</div>
+                    <div>
+                        <strong>Priyanshu</strong>
+                        <small>2 hours ago</small>
+                    </div>
+                </div>
+
+                <h3>How should I start learning Python?</h3>
+                <p>
+                    I am a beginner. Can someone suggest a good roadmap
+                    for learning Python?
+                </p>
+
+                <div class="discussion-meta">
+                    <span>💬 12 Replies</span>
+                    <span>👁️ 48 Views</span>
+                    <span>🐍 Python</span>
+                </div>
+            </div>
+
+
+            <div class="discussion-card">
+                <div class="discussion-user">
+                    <div class="avatar">A</div>
+                    <div>
+                        <strong>Aman</strong>
+                        <small>5 hours ago</small>
+                    </div>
+                </div>
+
+                <h3>Best way to prepare for DSA?</h3>
+                <p>
+                    Which topics should I complete first before starting
+                    LeetCode problems?
+                </p>
+
+                <div class="discussion-meta">
+                    <span>💬 8 Replies</span>
+                    <span>👁️ 31 Views</span>
+                    <span>💻 DSA</span>
+                </div>
+            </div>
+
+
+            <div class="discussion-card">
+                <div class="discussion-user">
+                    <div class="avatar">S</div>
+                    <div>
+                        <strong>Shreya</strong>
+                        <small>Yesterday</small>
+                    </div>
+                </div>
+
+                <h3>AI/ML roadmap for first year students</h3>
+                <p>
+                    What should a CSE AI/ML student learn during the first year?
+                </p>
+
+                <div class="discussion-meta">
+                    <span>💬 15 Replies</span>
+                    <span>👁️ 72 Views</span>
+                    <span>🤖 AI & ML</span>
+                </div>
+            </div>
+
+        </section>
+
+
+        <aside class="discussion-sidebar">
+
+            <h3>Popular Topics</h3>
+
+            <a href="python.html">🐍 Python</a>
+            <a href="dsa.html">💻 DSA</a>
+            <a href="ai-ml.html">🤖 AI & ML</a>
+            <a href="math.html">📐 Mathematics</a>
+            <a href="physics.html">⚛️ Physics</a>
+
+        </aside>
+
+    </div>
+
+</main>
+
+
+<footer class="footer">
+    <p>© 2026 StudySync. Learn. Connect. Grow.</p>
+</footer>
+
+
+<script>
+function loginMessage() {
+    alert("Please login to create a new discussion.");
+}
+</script>
+
+</body>
+</html>
+

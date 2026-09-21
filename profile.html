@@ -1,0 +1,204 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile - StudySync</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+
+<body>
+
+<header class="navbar">
+    <div class="logo">📚 StudySync</div>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="subjects.html">Subjects</a>
+        <a href="communities.html">Communities</a>
+        <a href="notes.html">Notes</a>
+        <a href="planner.html">Planner</a>
+    </nav>
+
+    <div class="nav-buttons">
+        <a href="notifications.html" class="notification-link">🔔</a>
+        <a href="profile.html" class="profile-link">👤</a>
+    </div>
+</header>
+
+
+<main class="profile-page">
+
+    <section class="profile-header">
+
+        <div class="profile-avatar">
+            A
+        </div>
+
+        <div class="profile-info">
+            <h1>Ashvik</h1>
+            <p>🎓 B.Tech CSE | AI & ML</p>
+            <p>📍 StudySync Student</p>
+        </div>
+
+        <button class="btn" onclick="editProfile()">
+            ✏️ Edit Profile
+        </button>
+
+    </section>
+
+
+    <section class="profile-grid">
+
+        <div class="profile-card">
+            <h2>📊 My Progress</h2>
+
+            <div class="progress-item">
+                <div>
+                    <span>Python</span>
+                    <strong>75%</strong>
+                </div>
+                <div class="progress-bar">
+                    <div style="width:75%"></div>
+                </div>
+            </div>
+
+            <div class="progress-item">
+                <div>
+                    <span>Mathematics</span>
+                    <strong>60%</strong>
+                </div>
+                <div class="progress-bar">
+                    <div style="width:60%"></div>
+                </div>
+            </div>
+
+            <div class="progress-item">
+                <div>
+                    <span>AI & ML</span>
+                    <strong>45%</strong>
+                </div>
+                <div class="progress-bar">
+                    <div style="width:45%"></div>
+                </div>
+            </div>
+
+            <div class="progress-item">
+                <div>
+                    <span>DSA</span>
+                    <strong>35%</strong>
+                </div>
+                <div class="progress-bar">
+                    <div style="width:35%"></div>
+                </div>
+            </div>
+
+        </div>
+
+
+        <div class="profile-card">
+            <h2>🏆 Achievements</h2>
+
+            <div class="achievement">
+                <span>🔥</span>
+                <div>
+                    <h3>7 Day Streak</h3>
+                    <p>Studied for 7 consecutive days.</p>
+                </div>
+            </div>
+
+            <div class="achievement">
+                <span>📚</span>
+                <div>
+                    <h3>First Chapter</h3>
+                    <p>Completed your first study chapter.</p>
+                </div>
+            </div>
+
+            <div class="achievement">
+                <span>💬</span>
+                <div>
+                    <h3>Community Member</h3>
+                    <p>Joined a student community.</p>
+                </div>
+            </div>
+
+        </div>
+
+
+        <div class="profile-card stats-card">
+
+            <h2>📈 Study Statistics</h2>
+
+            <div class="stats-grid">
+
+                <div>
+                    <strong>24</strong>
+                    <span>Notes Read</span>
+                </div>
+
+                <div>
+                    <strong>12</strong>
+                    <span>Discussions</span>
+                </div>
+
+                <div>
+                    <strong>18</strong>
+                    <span>Tasks Done</span>
+                </div>
+
+                <div>
+                    <strong>7</strong>
+                    <span>Day Streak</span>
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="profile-card">
+
+            <h2>⚙️ Account</h2>
+
+            <button class="profile-option" onclick="editProfile()">
+                ✏️ Edit Profile
+            </button>
+
+            <button class="profile-option" onclick="alert('Settings coming soon!')">
+                ⚙️ Settings
+            </button>
+
+            <button class="profile-option logout" onclick="logoutMessage()">
+                🚪 Logout
+            </button>
+
+        </div>
+
+    </section>
+
+</main>
+
+
+<footer class="footer">
+    <p>© 2026 StudySync. Learn. Connect. Grow.</p>
+</footer>
+
+
+<script>
+
+function editProfile() {
+    alert("Profile editing will be available soon.");
+}
+
+function logoutMessage() {
+    alert("You have been logged out.");
+}
+
+</script>
+
+</body>
+</html>

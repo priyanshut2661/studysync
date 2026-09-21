@@ -1,0 +1,167 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Chat - StudySync</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/chat.css">
+</head>
+
+<body>
+
+<header class="navbar">
+
+    <div class="logo">📚 StudySync</div>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="subjects.html">Subjects</a>
+        <a href="communities.html">Communities</a>
+        <a href="notes.html">Notes</a>
+        <a href="planner.html">Planner</a>
+        <a href="friends.html" class="active">Friends</a>
+    </nav>
+
+    <div class="nav-buttons">
+        <a href="notifications.html">🔔</a>
+        <a href="profile.html">👤</a>
+    </div>
+
+</header>
+
+
+<main class="chat-page">
+
+    <section class="chat-container">
+
+        <!-- CHAT HEADER -->
+
+        <div class="chat-header">
+
+            <a href="friends.html" class="back-chat">
+                ←
+            </a>
+
+            <div class="chat-avatar" id="chatAvatar">
+                R
+                <span class="online-dot"></span>
+            </div>
+
+            <div class="chat-user-info">
+                <h2 id="friendName">Rahul Sharma</h2>
+                <p id="friendStatus">🟢 Online</p>
+            </div>
+
+            <div class="chat-options">
+                ⋮
+            </div>
+
+        </div>
+
+
+        <!-- MESSAGES -->
+
+        <div class="messages" id="messages">
+
+            <div class="date-divider">
+                Today
+            </div>
+
+
+            <div class="message received">
+
+                <div class="message-bubble">
+                    Hey! How are you?
+                </div>
+
+                <small>10:30 AM</small>
+
+            </div>
+
+
+            <div class="message sent">
+
+                <div class="message-bubble">
+                    I'm good! What about you?
+                </div>
+
+                <small>10:31 AM</small>
+
+            </div>
+
+
+            <div class="message received">
+
+                <div class="message-bubble">
+                    I'm good too 😊
+                </div>
+
+                <small>10:32 AM</small>
+
+            </div>
+
+
+            <div class="message received">
+
+                <div class="message-bubble">
+                    Are you studying Python today?
+                </div>
+
+                <small>10:33 AM</small>
+
+            </div>
+
+
+            <div class="message sent">
+
+                <div class="message-bubble">
+                    Yes! I'm working on loops right now 🐍
+                </div>
+
+                <small>10:34 AM</small>
+
+            </div>
+
+        </div>
+
+
+        <!-- TYPING AREA -->
+
+        <div class="typing-area">
+
+            <button class="emoji-btn" onclick="addEmoji()">
+                😊
+            </button>
+
+            <input
+                type="text"
+                id="messageInput"
+                placeholder="Type a message..."
+                autocomplete="off"
+            >
+
+            <button class="send-btn" onclick="sendMessage()">
+                ➤
+            </button>
+
+        </div>
+
+    </section>
+
+</main>
+
+
+<footer class="footer">
+    <p>© 2026 StudySync. Learn. Connect. Grow.</p>
+</footer>
+
+
+<script src="js/chat.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>StudySync - Sign Up</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+
+<body class="auth-page">
+
+<div class="auth-container">
+
+    <div class="auth-box">
+
+        <div class="logo">Study<span>Sync</span></div>
+
+        <h1>Create Account 🚀</h1>
+
+        <p class="auth-subtitle">
+            Start your smarter learning journey.
+        </p>
+
+
+        <form id="signupForm">
+
+            <label>Full Name</label>
+
+            <input
+                type="text"
+                id="signupName"
+                placeholder="Enter your name"
+                required
+            >
+
+
+            <label>Email</label>
+
+            <input
+                type="email"
+                id="signupEmail"
+                placeholder="Enter your email"
+                required
+            >
+
+
+            <label>Password</label>
+
+            <input
+                type="password"
+                id="signupPassword"
+                placeholder="Create a password"
+                required
+            >
+
+
+            <label>Confirm Password</label>
+
+            <input
+                type="password"
+                id="confirmPassword"
+                placeholder="Confirm your password"
+                required
+            >
+
+
+            <button type="submit" class="btn primary-btn full-btn"
+            id="signupBtn">
+                Create Account
+            </button>
+
+        </form>
+
+
+        <p class="auth-bottom">
+            Already have an account?
+            <a href="login.html">Login</a>
+        </p>
+
+
+        <a href="index.html" class="back-home">
+            ← Back to Home
+        </a>
+
+    </div>
+
+</div>
+
+
+</form>
+
+</div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/appwrite@17.0.0"></script>
+<script src="js/auth.js"></script>
+
+<script>
+document.getElementById("signupForm").addEventListener("submit", async function(e) {
+    e.preventDefault();
+
+    const email = document.getElementById("signupEmail").value;
+    const password = document.getElementById("signupPassword").value;
+
+    await signup(email, password);
+});
+</script>
+
+
+
+</body>
+</html>
